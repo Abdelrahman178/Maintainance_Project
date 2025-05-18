@@ -3,7 +3,7 @@ package net.java.lms_backend.mapper;
 import net.java.lms_backend.dto.QuizDTO;
 import net.java.lms_backend.entity.Quiz;
 
-public class QuizMapper {
+public class QuizMapper extends QuizDTO {
     public static Quiz toEntity(QuizDTO quizDTO) {
         Quiz quiz = new Quiz();
         quiz.setNumOfMCQ(quizDTO.getNumOfMCQ());

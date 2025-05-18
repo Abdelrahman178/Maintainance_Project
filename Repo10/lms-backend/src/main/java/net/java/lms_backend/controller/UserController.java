@@ -1,5 +1,6 @@
 package net.java.lms_backend.controller;
 
+import net.java.lms_backend.Repositrory.UserRepository;
 import net.java.lms_backend.Service.UserService;
 import net.java.lms_backend.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/user")
-public class UserController {
+public abstract class UserController implements UserRepository {
     @Autowired
     UserService userService;
 

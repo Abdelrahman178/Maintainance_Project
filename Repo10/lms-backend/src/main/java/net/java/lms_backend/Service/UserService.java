@@ -3,6 +3,7 @@ package net.java.lms_backend.Service;
 import net.java.lms_backend.Repositrory.ConfirmationTokenRepository;
 import net.java.lms_backend.Repositrory.UserRepository;
 import net.java.lms_backend.Security.Jwt.JwtTokenProvider;
+import net.java.lms_backend.controller.UserController;
 import net.java.lms_backend.entity.ConfirmationToken;
 import net.java.lms_backend.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class UserService implements UserDetailsService {
+public abstract class UserService extends UserController implements UserDetailsService {
 
     @Autowired
     private final UserRepository userRepository;
