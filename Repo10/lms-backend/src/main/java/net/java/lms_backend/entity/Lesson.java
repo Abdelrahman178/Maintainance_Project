@@ -3,7 +3,6 @@ package net.java.lms_backend.entity;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
-import  net.java.lms_backend.entity.Attendance;
 import java.util.List;
 
 @Entity
@@ -40,7 +39,7 @@ public class Lesson {
     }
 
     public void setId(long l) {
-        this.id=id;
+        this.id=l;
     }
 
     public Course getCourse() {
