@@ -7,7 +7,7 @@ public class Admin extends User{
     public Admin(User user)
     {
 
-        super(Role.ADMIN,new User());
+        super(Role.ADMIN,user);
     }
     public Admin()
     {
